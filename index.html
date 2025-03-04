@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #1e1e2e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #282a36;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 80px auto;
+        }
+        select, input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+        }
+        input, select {
+            background: #3b3f52;
+            color: #fff;
+        }
+        
+        button {
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        #amount{
+            overflow: hidden;
+            width: 94%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <input type="number" id="amount" placeholder="Enter amount" value="1">
+        <select id="fromCurrency"></select>
+        <select id="toCurrency"></select>
+        <button onclick="convertCurrency()">Convert</button>
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="./script.js"> </script>
+</body>
+</html>
+
+
+
